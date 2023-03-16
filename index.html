@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        screens: {
+          sm: '480px',
+          md: '768px',
+          lg: '976px',
+          xl: '1440px',
+        },
+
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          },
+          backgroundImage: {
+            'hero': "url('burger.jpg')",
+
+
+          },
+          zIndex: {
+            'auto': 'auto',
+            '0': 0,
+            '-1': -1,
+          },
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <!-- <section class="bg-gradient-to-r from-cyan-500 to-blue-500"> -->
+  <section class="bg-hero h-screen bg-center  opacity-black bg-no-repeat bg-cover">
+    <nav class=" sm:flex flex justify-between">
+
+      <h1 class="  sm:text-2xl ml-24 md:text-7xl no-underline  text-center font-bold underline">
+        ZOMaTO
+        <!-- <img src="burger.jpg" class=" min-w-full "> -->
+      </h1>
+
+      <ul class="hidden md:flex sm:hidden  w-full ml-20 items-center align-end justify-center space-x-4 ">
+        <div class=" flex shadow-xl bg-white border-box rounded justify-between w-1/2 space-x-4 p-4">
+          <i class='fa fa-map-marker text-30'>location</i>
+          <div class="h-[14px] w-1 bg-red-400"></div>
+          <i class="fa fa-search"> Search</i>
+        </div>
+        <li><button class=" bg-white rounded w-20 h-12 ">about us<a href="#ftr" ><i
+              class='fa fa-arrow-circle-down'></i></a></button></li>
+
+      </ul>
+      <i style="font-size:24px" class="fa sm:flex  sm:align-right sm:block md:hidden">&#xf0c9;</i>
+      <br>
+
+      <!-- <h3 class="text-3xl">search</h3> -->
+
+    </nav>
+
+  </section>
+
+
+  <!-- <div class="bg-blue-300">
+    <hr class="sm:w-full sm:h-5 h-5 bg-blue-300">
+  </div> -->
+  <br>
+  <div class=" flex justify-evenly ">
+    <div class=" flex  items-center hover:underline font-bold space-x-2 "><img
+        class="w-16 h-16 object-cover  border-solid border-red-400 " src="dilvery.jpeg">
+      <p> delivery</p>
+    </div>
+    <div class=" flex items-center  hover:underline font-bold space-x-2 "><img class="w-16 h-16 object-cover "
+        src="dinin-img.jpeg">
+      <p> dinin-out</p>
+    </div>
+    <div class=" flex items-center  hover:underline font-bold space-x-2 "><img class="w-16 h-16 " src="night.jpeg">
+      <p>nightlift</p>
+    </div>
+    <!-- <ul class=" flex justify-between space">
+    <li class="float-right">delivery<img src="dilvery.jpeg"> </li>
+    <li class="float-left"><img src="dinin-img.jpeg"> dinin-out</li>
+    <li class=" float-left"><img src="night.jpeg"> nightlift</li>
+    
+  </ul> -->
+  </div>
+  <br>
+  <br>
+  <div class="flex justify-start items-center space-x-4 pl-5">
+    <!-- <ul class="flex justify-evenly items-start"> -->
+    <button
+      class=" transition ease-in-out delay-150  hover:-translate-y-1 px-5 border-4 border-gray-300 rounded ">filter</button>
+    <button class=" transition ease-in-out delay-150  hover:-translate-y-1 px-5 border-4 border-gray-300 rounded">Rating
+    </button>
+    <button class="transition ease-in-out delay-150  hover:-translate-y-1 px-5  border-4 border-gray-300 rounded">Pure
+      veg</button>
+
+    </ul>
+  </div>
+  <br>
+  <div class="bg-gray-300">
+  <h2 class="mt-4 ml-4 text-2xl text-red-900" >Inspiration for your first order</h2>
+  
+  <div class=" p-10 flex justify-between whitespace-nowrap overflow-auto scrollbar-hide space-x-4 ">
+    <div class="w-48 h-48  object-cover overflow-hidden  rounded-full">
+    <img src="thali.jpeg" class="obejct-cover h-full w-full">
+  </div>
+  <div class="w-48 h-48  object-cover overflow-hidden  rounded-full">
+    <img src="thali.jpeg" class="obejct-cover h-full w-full">
+  </div>
+  <div class="w-48 h-48  object-cover overflow-hidden  rounded-full">
+    <img src="thali.jpeg" class="obejct-cover h-full w-full">
+  </div>
+  <div class="w-48 h-48  object-cover overflow-hidden  rounded-full">
+    <img src="thali.jpeg" class="obejct-cover h-full w-full">
+  </div>
+  <div class="w-48 h-48  object-cover overflow-hidden  rounded-full">
+    <img src="thali.jpeg" class="obejct-cover h-full w-full">
+  </div>
+  <div class="w-48 h-48  object-cover overflow-hidden  rounded-full">
+    <img src="thali.jpeg" class="obejct-cover h-full w-full">
+  </div>
+    <!-- <img src="thali.jpeg" class="h-48">
+    <img src="thali.jpeg" class="h-48">
+    <img src="thali.jpeg" class="h-48">
+    <img src="thali.jpeg" class="h-48">
+    <img src="thali.jpeg" class="h-48">
+    <img src="thali.jpeg" class="h-48">
+    <img src="thali.jpeg" class="h-48"> -->
+  </div>
+</div>
+
+  <div>
+    <h1 class="mt-10 text-2xl text-red-900"> Best seelling items</h1>
+  </div>
+  <br>
+  <!-- <div class=" md:grid grid-cols-3 justify-evenly gap-4  "> -->
+  <div class="flex flex-col md:flex-row   justify-evenly">
+    <img class=" transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 h-72 w-72 "
+      src="burger.jpg" />
+    <img class=" transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300 h-72 w-72 "
+      src="burger2.jpeg" />
+    <img class=" transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 h-72 w-72 "
+      src="coke.jpg" />
+  </div>
+  <div class="flex flex-col md:flex-row   justify-evenly">
+    <img class=" transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 h-72 w-72 "
+      src="frenky.jpeg" />
+    <img class=" transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 h-72 w-72 "
+      src="fries.jpeg" />
+    <img class=" transition ease-in-out delay-150   hover:-translate-y-1 hover:scale-110  duration-300 h-72 w-72 "
+      src="mc-cafe.jpeg" />
+  </div>
+
+ 
+  <hr class="sm:w-full border-solid border-4">
+  <footer id="ftr" class=" sm:w-full bg-gray-300">
+
+    <h1 class="text-3xl w-50 text-balck-500  text-center pb-10">ZOMaTO</h1>
+
+    <div class="flex justify-center align-end items-center space-x-4">
+
+      <i class="text-3xl fa fa-facebook-f"></i>
+      <i class="text-3xl fa fa-twitter-square"></i>
+      <i class="text-3xl fa fa-instagram"></i>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -14,3 +14,8 @@ my name is vidhi.
 thank you:)
 
 finally complete with new-have .
+
+
+ <div class="w-48 h-48  object-cover overflow-hidden  rounded-full">
+    <img src="thali.jpeg" class="obejct-cover h-full w-full">
+  </div>
